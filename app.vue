@@ -21,10 +21,12 @@ const projects = [
     link: "#",
   },
 ];
+const { x, y } = useMouseMove();
 </script>
 
 <template>
   <div class="bg-neutral">
+    <span>Mouse position is at: {{ x }}, {{ y }}</span>
     <!-- Header -->
     <base-header />
     <!-- Hero Section -->
